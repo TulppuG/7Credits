@@ -56,15 +56,6 @@ $(window).ready(function () {
             $('.img-' + a).css('opacity', 1);
         })
 
-        $('.item').hover(function () {
-            let a = $(this).data('id')
-            $('.desc-' + a).css('opacity', 1);
-            $('.img-' + a).css('opacity', 0);
-        }, function () {
-            let a = $(this).data('id')
-            $('.desc-' + a).css('opacity', 0);
-            $('.img-' + a).css('opacity', 1);
-        })
 
         $("[type='number']").keypress(function (evt) {
             evt.preventDefault();
